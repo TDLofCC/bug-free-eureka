@@ -6,7 +6,7 @@ class DataLoader {
   }
 
   async load (version, file) {
-    const uri = `data/s12/global/excel/${file}`
+    const uri = `data/${version}/global/excel/${file}`
     if (this.loaded[uri]) {
       return this.loaded[uri]
     }
